@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们 - Spring Agent Start</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-robot text-2xl text-blue-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Spring Agent Start</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">首页</a>
+                    <a href="product.html" class="text-gray-600 hover:text-blue-600">产品介绍</a>
+                    <a href="about.html" class="text-blue-600 font-medium">关于我们</a>
+                    <a href="team.html" class="text-gray-600 hover:text-blue-600">团队</a>
+                    <a href="pricing.html" class="text-gray-600 hover:text-blue-600">价格</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block text-gray-600 hover:text-blue-600 py-2">首页</a>
+                <a href="product.html" class="block text-gray-600 hover:text-blue-600 py-2">产品介绍</a>
+                <a href="about.html" class="block text-blue-600 font-medium py-2">关于我们</a>
+                <a href="team.html" class="block text-gray-600 hover:text-blue-600 py-2">团队</a>
+                <a href="pricing.html" class="block text-gray-600 hover:text-blue-600 py-2">价格</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">关于我们</h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                    致力于为Java开发者提供最优秀的AI应用开发工具和平台
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">我们的使命</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Spring Agent Start 项目的使命是降低AI应用开发的门槛，让每一个Java开发者都能轻松构建强大的AI应用。
+                        我们相信，通过提供简单易用的工具和完整的解决方案，可以加速AI技术在各行各业的应用和普及。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-target text-blue-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">简化开发流程</h3>
+                                <p class="text-gray-600 text-sm">提供开箱即用的AI开发工具，让开发者专注于业务逻辑</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-users text-green-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">建设开发者社区</h3>
+                                <p class="text-gray-600 text-sm">构建活跃的开源社区，促进知识分享和技术交流</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-rocket text-purple-600 text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-1">推动技术创新</h3>
+                                <p class="text-gray-600 text-sm">持续探索AI技术的最新发展，融入平台功能</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
+                        <div class="text-center">
+                            <i class="fas fa-lightbulb text-6xl mb-6 opacity-80"></i>
+                            <h3 class="text-2xl font-bold mb-4">创新驱动发展</h3>
+                            <p class="text-blue-100">
+                                我们始终坚持技术创新，致力于为开发者提供最前沿的AI开发体验
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">我们的价值观</h2>
+                <p class="text-xl text-gray-600">指导我们前进的核心理念</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">用户至上</h3>
+                    <p class="text-gray-600">始终以用户需求为中心，提供最佳的产品体验</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-handshake text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">开放合作</h3>
+                    <p class="text-gray-600">拥抱开源精神，与社区共同成长和进步</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-star text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">追求卓越</h3>
+                    <p class="text-gray-600">不断追求技术和产品的卓越品质</p>
+                    </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-orange-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">安全可靠</h3>
+                    <p class="text-gray-600">确保平台的安全性和数据的可靠性</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">我们的故事</h2>
+                <p class="text-xl text-gray-600">从想法到现实的发展历程</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200"></div>
+                    
+                    <!-- Timeline items -->
+                    <div class="space-y-12">
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-white p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-lg font-semibold mb-2">2024年初</h3>
+                                    <h4 class="text-blue-600 font-medium mb-2">项目构思</h4>
+                                    <p class="text-gray-600 text-sm">
+                                        在Spring AI框架发布后，我们意识到Java生态系统需要一个专门的AI应用开发平台
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-4 h-4 bg-blue-600 rounded-full relative z-10"></div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8"></div>
+                            <div class="w-4 h-4 bg-green-600 rounded-full relative z-10"></div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-white p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-lg font-semibold mb-2">2024年中</h3>
+                                    <h4 class="text-green-600 font-medium mb-2">核心开发</h4>
+                                    <p class="text-gray-600 text-sm">
+                                        开始核心功能的开发，包括Agent管理、工作流构建器和知识库系统
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-white p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-lg font-semibold mb-2">2024年末</h3>
+                                    <h4 class="text-purple-600 font-medium mb-2">开源发布</h4>
+                                    <p class="text-gray-600 text-sm">
+                                        正式在GitHub上开源发布，邀请社区开发者共同参与项目建设
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="w-4 h-4 bg-purple-600 rounded-full relative z-10"></div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8"></div>
+                            <div class="w-4 h-4 bg-orange-600 rounded-full relative z-10"></div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-white p-6 rounded-lg shadow-lg">
+                                    <h3 class="text-lg font-semibold mb-2">未来规划</h3>
+                                    <h4 class="text-orange-600 font-medium mb-2">持续发展</h4>
+                                    <p class="text-gray-600 text-sm">
+                                        继续完善平台功能，扩大社区规模，成为Java AI开发的首选平台
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">加入我们的社区</h2>
+                <p class="text-xl text-gray-600">与全球开发者一起构建AI应用的未来</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fab fa-github text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">GitHub社区</h3>
+                    <p class="text-gray-600 mb-6">
+                        在GitHub上参与项目开发，提交Issue和Pull Request
+                    </p>
+                    <a href="https://github.com/aigoodle/spring-agent-start" target="_blank"
+                       class="bg-gray-800 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition duration-300">
+                        访问GitHub
+                    </a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-comments text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">技术交流</h3>
+                    <p class="text-gray-600 mb-6">
+                        加入我们的技术讨论群，与其他开发者分享经验
+                    </p>
+                    <a href="#" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                        加入讨论
+                    </a>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-book text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">学习资源</h3>
+                    <p class="text-gray-600 mb-6">
+                        获取详细的文档、教程和最佳实践指南
+                    </p>
+                    <a href="#" class="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+                        查看文档
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">联系我们</h2>
+            <p class="text-xl mb-8">有任何问题或建议？我们很乐意听到您的声音</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:contact@springagentstart.com"
+                   class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i>
+                    发送邮件
+                </a>
+                <a href="https://github.com/aigoodle/spring-agent-start/issues" target="_blank"
+                   class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                    <i class="fab fa-github mr-2"></i>
+                    提交Issue
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-2xl text-blue-400 mr-2"></i>
+                        <span class="text-xl font-bold">Spring Agent Start</span>
+                    </div>
+                    <p class="text-gray-400">
+                        基于Spring AI的Java版AI应用开发平台
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">产品</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="product.html" class="hover:text-white">产品介绍</a></li>
+                        <li><a href="#" class="hover:text-white">功能特性</a></li>
+                        <li><a href="pricing.html" class="hover:text-white">价格方案</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">公司</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">关于我们</a></li>
+                        <li><a href="team.html" class="hover:text-white">团队</a></li>
+                        <li><a href="#" class="hover:text-white">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">开发者</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://github.com/aigoodle/spring-agent-start" target="_blank" class="hover:text-white">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white">文档</a></li>
+                        <li><a href="#" class="hover:text-white">API</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Spring Agent Start. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

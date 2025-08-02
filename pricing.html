@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>价格 - Spring Agent Start</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-robot text-2xl text-blue-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Spring Agent Start</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">首页</a>
+                    <a href="product.html" class="text-gray-600 hover:text-blue-600">产品介绍</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">关于我们</a>
+                    <a href="team.html" class="text-gray-600 hover:text-blue-600">团队</a>
+                    <a href="pricing.html" class="text-blue-600 font-medium">价格</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block text-gray-600 hover:text-blue-600 py-2">首页</a>
+                <a href="product.html" class="block text-gray-600 hover:text-blue-600 py-2">产品介绍</a>
+                <a href="about.html" class="block text-gray-600 hover:text-blue-600 py-2">关于我们</a>
+                <a href="team.html" class="block text-gray-600 hover:text-blue-600 py-2">团队</a>
+                <a href="pricing.html" class="block text-blue-600 font-medium py-2">价格</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">选择适合您的方案</h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                    从个人开发者到企业团队，我们为不同规模的用户提供灵活的定价方案
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Source Notice -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+                <div class="flex items-center justify-center mb-4">
+                    <i class="fab fa-github text-3xl text-green-600 mr-3"></i>
+                    <h2 class="text-2xl font-bold text-green-800">开源免费</h2>
+                </div>
+                <p class="text-green-700 text-lg mb-4">
+                    Spring Agent Start 是一个完全开源的项目，核心功能永久免费使用
+                </p>
+                <a href="https://github.com/aigoodle/spring-agent-start" target="_blank"
+                   class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300">
+                    <i class="fab fa-github mr-2"></i>
+                    立即获取源码
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">服务方案</h2>
+                <p class="text-xl text-gray-600">为不同需求的用户提供专业的技术支持和服务</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Community Plan -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">社区版</h3>
+                        <p class="text-gray-600 mb-4">适合个人开发者和小团队</p>
+                        <div class="text-4xl font-bold text-green-600 mb-2">免费</div>
+                        <p class="text-gray-500">永久免费使用</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>完整源代码访问</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>基础AI模型集成</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>工作流构建器</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>知识库管理</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>社区技术支持</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-600 mr-3"></i>
+                            <span>详细文档和教程</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="https://github.com/aigoodle/spring-agent-start" target="_blank"
+                       class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 text-center block">
+                        立即开始
+                    </a>
+                </div>
+
+                <!-- Professional Plan -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300 border-2 border-blue-500 relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">推荐</span>
+                    </div>
+                    
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-briefcase text-2xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">专业版</h3>
+                        <p class="text-gray-600 mb-4">适合成长型企业和开发团队</p>
+                        <div class="text-4xl font-bold text-blue-600 mb-2">¥999</div>
+                        <p class="text-gray-500">每月/每个实例</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-3"></i>
+                            <span>包含社区版所有功能</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-3"></i>
+                            <span>优先技术支持</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-3"></i>
+                            <span>云端部署指导</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-3"></i>
+                            <span>性能监控和分析</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-3"></i>
+                            <span>高级模型配置</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-3"></i>
+                            <span>月度技术培训</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-blue-600 mr-3"></i>
+                            <span>SLA保障</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact"
+                       class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 text-center block">
+                        联系销售
+                    </a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition duration-300">
+                    <div class="text-center mb-8">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-building text-2xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">企业版</h3>
+                        <p class="text-gray-600 mb-4">适合大型企业和关键业务应用</p>
+                        <div class="text-4xl font-bold text-purple-600 mb-2">定制</div>
+                        <p class="text-gray-500">根据需求定价</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>包含专业版所有功能</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>7x24小时技术支持</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>定制功能开发</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>私有化部署服务</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>专属客户经理</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>企业级安全保障</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-purple-600 mr-3"></i>
+                            <span>定制培训服务</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="#contact"
+                       class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300 text-center block">
+                        联系我们
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Comparison -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">功能对比</h2>
+                <p class="text-xl text-gray-600">详细了解各个版本的功能差异</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-gray-800 font-semibold">功能特性</th>
+                            <th class="px-6 py-4 text-center text-gray-800 font-semibold">社区版</th>
+                            <th class="px-6 py-4 text-center text-gray-800 font-semibold">专业版</th>
+                            <th class="px-6 py-4 text-center text-gray-800 font-semibold">企业版</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 font-medium">源代码访问</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check text-green-600"></i></td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check text-green-600"></i></td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check text-green-600"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">AI模型集成</td>
+                            <td class="px-6 py-4 text-center">基础模型</td>
+                            <td class="px-6 py-4 text-center">高级模型</td>
+                            <td class="px-6 py-4 text-center">全部模型</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">并发用户数</td>
+                            <td class="px-6 py-4 text-center">100</td>
+                            <td class="px-6 py-4 text-center">1,000</td>
+                            <td class="px-6 py-4 text-center">无限制</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">技术支持</td>
+                            <td class="px-6 py-4 text-center">社区支持</td>
+                            <td class="px-6 py-4 text-center">邮件支持</td>
+                            <td class="px-6 py-4 text-center">7x24小时</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">SLA保障</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-600"></i></td>
+                            <td class="px-6 py-4 text-center">99.5%</td>
+                            <td class="px-6 py-4 text-center">99.9%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">定制开发</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-times text-red-600"></i></td>
+                            <td class="px-6 py-4 text-center">有限支持</td>
+                            <td class="px-6 py-4 text-center"><i class="fas fa-check text-green-600"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium">私有化部署</td>
+                            <td class="px-6 py-4 text-center">自助部署</td>
+                            <td class="px-6 py-4 text-center">部署指导</td>
+                            <td class="px-6 py-4 text-center">全程服务</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">常见问题</h2>
+                <p class="text-xl text-gray-600">关于定价和服务的常见问题解答</p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        社区版是否有功能限制？
+                    </h3>
+                    <p class="text-gray-600 pl-6">
+                        社区版包含所有核心功能，没有功能限制。您可以完全免费使用Spring Agent Start的所有基础能力，
+                        包括AI模型集成、工作流构建、知识库管理等。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        专业版和企业版主要提供哪些额外服务？
+                    </h3>
+                    <p class="text-gray-600 pl-6">
+                        付费版本主要提供技术支持、部署服务、培训服务和定制开发。
+                        软件本身的功能基本相同，付费版本更多的是服务层面的增值。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        是否支持试用？
+                    </h3>
+                    <p class="text-gray-600 pl-6">
+                        由于社区版本身就是免费的，您可以直接下载使用。
+                        对于专业版和企业版的服务，我们提供30天免费试用期。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        如何从社区版升级到付费版本？
+                    </h3>
+                    <p class="text-gray-600 pl-6">
+                        升级过程非常简单，软件本身无需重新安装。
+                        您只需要联系我们开通相应的技术支持和服务即可。
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-lg font-semibold mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-600 mr-3"></i>
+                        是否提供教育折扣？
+                    </h3>
+                    <p class="text-gray-600 pl-6">
+                        我们为教育机构和学生提供特殊优惠。
+                        请联系我们的销售团队了解具体的教育优惠政策。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">还有疑问？</h2>
+            <p class="text-xl mb-8">我们的销售团队随时为您提供专业咨询</p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-envelope text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">邮件咨询</h3>
+                    <p class="text-blue-100 text-sm mb-4">通过邮件联系我们的销售团队</p>
+                    <a href="mailto:sales@springagentstart.com" class="text-white underline">
+                        sales@springagentstart.com
+                    </a>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-phone text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">电话咨询</h3>
+                    <p class="text-blue-100 text-sm mb-4">工作日 9:00-18:00</p>
+                    <a href="tel:400-123-4567" class="text-white underline">
+                        400-123-4567
+                    </a>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-comments text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">在线客服</h3>
+                    <p class="text-blue-100 text-sm mb-4">快速响应您的问题</p>
+                    <a href="#" class="text-white underline">
+                        开始对话
+                    </a>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://github.com/aigoodle/spring-agent-start" target="_blank"
+                   class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    <i class="fab fa-github mr-2"></i>
+                    开始免费使用
+                </a>
+                <a href="mailto:sales@springagentstart.com"
+                   class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                    申请演示
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-2xl text-blue-400 mr-2"></i>
+                        <span class="text-xl font-bold">Spring Agent Start</span>
+                    </div>
+                    <p class="text-gray-400">
+                        基于Spring AI的Java版AI应用开发平台
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">产品</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="product.html" class="hover:text-white">产品介绍</a></li>
+                        <li><a href="#" class="hover:text-white">功能特性</a></li>
+                        <li><a href="pricing.html" class="hover:text-white">价格方案</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">公司</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">关于我们</a></li>
+                        <li><a href="team.html" class="hover:text-white">团队</a></li>
+                        <li><a href="#" class="hover:text-white">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">开发者</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://github.com/aigoodle/spring-agent-start" target="_blank" class="hover:text-white">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white">文档</a></li>
+                        <li><a href="#" class="hover:text-white">API</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Spring Agent Start. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

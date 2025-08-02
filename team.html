@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队 - Spring Agent Start</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-robot text-2xl text-blue-600 mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Spring Agent Start</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600">首页</a>
+                    <a href="product.html" class="text-gray-600 hover:text-blue-600">产品介绍</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600">关于我们</a>
+                    <a href="team.html" class="text-blue-600 font-medium">团队</a>
+                    <a href="pricing.html" class="text-gray-600 hover:text-blue-600">价格</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-2 space-y-2">
+                <a href="index.html" class="block text-gray-600 hover:text-blue-600 py-2">首页</a>
+                <a href="product.html" class="block text-gray-600 hover:text-blue-600 py-2">产品介绍</a>
+                <a href="about.html" class="block text-gray-600 hover:text-blue-600 py-2">关于我们</a>
+                <a href="team.html" class="block text-blue-600 font-medium py-2">团队</a>
+                <a href="pricing.html" class="block text-gray-600 hover:text-blue-600 py-2">价格</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">我们的团队</h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                    一群热爱技术、追求创新的开发者，致力于推动AI技术在Java生态系统中的发展
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">核心团队</h2>
+                <p class="text-xl text-gray-600">项目的创始团队和核心贡献者</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gradient-to-br from-blue-500 to-purple-600 h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-4xl text-blue-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">项目创始人</h3>
+                        <p class="text-blue-600 font-medium mb-3">架构师 & 技术负责人</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            拥有10年以上Java开发经验，专注于Spring生态系统和AI技术融合，
+                            主导了Spring Agent Start项目的整体架构设计。
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-blue-600">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-blue-600">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-blue-600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gradient-to-br from-green-500 to-blue-600 h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-4xl text-green-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">AI算法专家</h3>
+                        <p class="text-green-600 font-medium mb-3">机器学习工程师</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            AI领域专家，负责平台的AI模型集成和优化，
+                            在自然语言处理和向量数据库方面有深入研究。
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-green-600">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-green-600">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-green-600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gradient-to-br from-purple-500 to-pink-600 h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-4xl text-purple-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">前端架构师</h3>
+                        <p class="text-purple-600 font-medium mb-3">UI/UX设计师</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            专注于用户体验设计和前端技术实现，
+                            负责平台的可视化界面和工作流构建器的设计开发。
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-purple-600">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-600">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-600">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gradient-to-br from-orange-500 to-red-600 h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-4xl text-orange-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">DevOps工程师</h3>
+                        <p class="text-orange-600 font-medium mb-3">云基础设施专家</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            负责平台的部署、监控和运维，
+                            在容器化和云原生技术方面有丰富的实践经验。
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-orange-600">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-orange-600">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-orange-600">
+                                <i class="fab fa-docker"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gradient-to-br from-indigo-500 to-purple-600 h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-4xl text-indigo-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">产品经理</h3>
+                        <p class="text-indigo-600 font-medium mb-3">用户体验专家</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            负责产品规划和用户需求分析，
+                            致力于打造最符合开发者需求的AI开发平台。
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-indigo-600">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-indigo-600">
+                                <i class="fab fa-medium"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Member 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300">
+                    <div class="bg-gradient-to-br from-teal-500 to-blue-600 h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-user text-4xl text-teal-600"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">技术文档工程师</h3>
+                        <p class="text-teal-600 font-medium mb-3">开发者关系专家</p>
+                        <p class="text-gray-600 text-sm mb-4">
+                            负责技术文档编写和开发者社区建设，
+                            帮助开发者更好地理解和使用平台功能。
+                        </p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-teal-600">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-teal-600">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-teal-600">
+                                <i class="fas fa-blog"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisors -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">技术顾问</h2>
+                <p class="text-xl text-gray-600">为项目提供战略指导和技术建议的专家团队</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Spring Framework专家</h3>
+                    <p class="text-blue-600 font-medium mb-3">资深Spring贡献者</p>
+                    <p class="text-gray-600 text-sm">
+                        Spring Framework核心团队成员，为项目的Spring集成提供技术指导
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-brain text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">AI研究学者</h3>
+                    <p class="text-green-600 font-medium mb-3">大学教授</p>
+                    <p class="text-gray-600 text-sm">
+                        在人工智能和机器学习领域的权威专家，指导AI技术的应用方向
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-rocket text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">创业导师</h3>
+                    <p class="text-purple-600 font-medium mb-3">连续创业者</p>
+                    <p class="text-gray-600 text-sm">
+                        有多次成功创业经验，为项目的商业化发展提供战略建议
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Culture & Values -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">团队文化</h2>
+                <p class="text-xl text-gray-600">我们共同坚持的工作理念和价值观</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-lightbulb text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">持续学习</h3>
+                                <p class="text-gray-600">鼓励团队成员不断学习新技术，保持技术敏感度</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-users text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">协作共赢</h3>
+                                <p class="text-gray-600">重视团队协作，通过分享和互助实现共同成长</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-code text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">代码质量</h3>
+                                <p class="text-gray-600">坚持高质量的代码标准，追求技术卓越</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4">
+                                <i class="fas fa-heart text-orange-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold mb-2">用户为先</h3>
+                                <p class="text-gray-600">始终以用户需求为出发点，创造真正有价值的产品</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
+                    <div class="text-center">
+                        <i class="fas fa-quote-left text-3xl text-blue-600 mb-6"></i>
+                        <blockquote class="text-lg text-gray-700 mb-6 font-medium">
+                            "我们相信技术的力量，更相信团队的力量。每个人的贡献都是宝贵的，
+                            每个想法都值得被倾听。在这里，我们不仅是同事，更是志同道合的伙伴。"
+                        </blockquote>
+                        <p class="text-blue-600 font-semibold">— 团队座右铭</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">加入我们</h2>
+            <p class="text-xl mb-8">寻找热爱技术、追求创新的开发者加入我们的团队</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-laptop-code text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Java开发工程师</h3>
+                    <p class="text-blue-100 text-sm">负责后端核心功能开发</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-paint-brush text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">前端开发工程师</h3>
+                    <p class="text-blue-100 text-sm">负责用户界面和交互开发</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                    <i class="fas fa-robot text-3xl mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">AI算法工程师</h3>
+                    <p class="text-blue-100 text-sm">负责AI模型集成和优化</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="mailto:careers@springagentstart.com"
+                   class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    <i class="fas fa-envelope mr-2"></i>
+                    发送简历
+                </a>
+                <a href="https://github.com/aigoodle/spring-agent-start" target="_blank"
+                   class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                    <i class="fab fa-github mr-2"></i>
+                    贡献代码
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-robot text-2xl text-blue-400 mr-2"></i>
+                        <span class="text-xl font-bold">Spring Agent Start</span>
+                    </div>
+                    <p class="text-gray-400">
+                        基于Spring AI的Java版AI应用开发平台
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">产品</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="product.html" class="hover:text-white">产品介绍</a></li>
+                        <li><a href="#" class="hover:text-white">功能特性</a></li>
+                        <li><a href="pricing.html" class="hover:text-white">价格方案</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">公司</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="about.html" class="hover:text-white">关于我们</a></li>
+                        <li><a href="team.html" class="hover:text-white">团队</a></li>
+                        <li><a href="#" class="hover:text-white">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">开发者</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://github.com/aigoodle/spring-agent-start" target="_blank" class="hover:text-white">GitHub</a></li>
+                        <li><a href="#" class="hover:text-white">文档</a></li>
+                        <li><a href="#" class="hover:text-white">API</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Spring Agent Start. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
